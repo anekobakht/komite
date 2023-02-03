@@ -1,0 +1,160 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = komite
+build_property.RootNamespace = komite
+build_property.ProjectDir = C:\nbt_software\komite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\nbt_software\komite
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/nbt_software/komite/Views/nevers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/nevers/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXGRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/nevers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/nevers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/nevers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/nevers/index_user.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV2ZXJzXGluZGV4X3VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/onvan_komite/Index_User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb252YW5fa29taXRlXEluZGV4X1VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/sabts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2FidHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/sabts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2FidHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/sabts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2FidHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/sabts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2FidHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/Shared/_LayoutMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/dashboard1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcZGFzaGJvYXJkMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/dashboard2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcZGFzaGJvYXJkMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/users/NoNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcnNcTm9OdW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/vaziats/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmF6aWF0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/vaziats/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmF6aWF0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/vaziats/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmF6aWF0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/vaziats/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmF6aWF0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/vaziats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmF6aWF0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/nbt_software/komite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-n0huzk8p81

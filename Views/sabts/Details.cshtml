@@ -1,0 +1,79 @@
+﻿@model komite.Models.sabt
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>sabt</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.onvan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.onvan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date_jalase)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date_jalase)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.masul_anjam)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.masul_anjam)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.masul_peygiri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.masul_peygiri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date_shoru)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date_shoru)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date_mohlat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date_mohlat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_vaziat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_vaziat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tozihat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tozihat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.darsad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.darsad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_onvan_komite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_onvan_komite)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id_sabt">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,115 @@
+﻿@model IEnumerable<komite.Models.onvan_komite>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div id="content" style="position:relative;right:0px">
+    <h4>کمیته های ثبت شده</h4>
+
+    <p>
+        <a class="btn btn-outline-success btn-rounded" asp-action="Create">ثبت مورد جدید</a>
+    </p>
+    <div  class="container-fluid">
+        <div id="row" style="display:none" class="row">
+            @{int i = 0; }
+            @foreach (var item in Model)
+            {
+                i = i + 1;
+                <div class="col-sm-3" style="padding-top: 15px;">
+                    <div  class="card">
+                        @if (i % 3 == 0)
+                        {
+                            <div class="card-header bg-info text-white" style="font-size:11px;text-align:center">
+                                @Html.DisplayFor(modelItem => item.name)
+                            </div>
+                        }
+                        @if (i % 3 == 1)
+                        {
+                            <div class="card-header bg-dark text-white" style="font-size:11px;text-align:center">
+                                @Html.DisplayFor(modelItem => item.name)
+                            </div>
+                        }
+                        @if (i % 3 == 2)
+                        {
+                            <div class="card-header bg-danger text-white" style="font-size:11px;text-align:center">
+                                @Html.DisplayFor(modelItem => item.name)
+                            </div>
+                        }
+                        @*@if (i % 4 == 3)
+                        {
+                            <div class="card-header bg-warning text-white" style="font-size:11px;text-align:center">
+                                @Html.DisplayFor(modelItem => item.name)
+                            </div>
+                        }*@
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-4" style="padding:0;">
+                                        <a style="margin:0" class="text-warning" asp-action="Edit" asp-route-id="@item.id_onvan_komite">ویرایش</a> 
+                                    </div>
+                                    <div class="col-sm-4" style="padding:0;">
+                                        <a style="margin:0" class="text-danger" asp-action="Delete" asp-route-id="@item.id_onvan_komite">حذف</a> 
+                                    </div>
+                                    <div class="col-sm-4"  style="padding:0;">
+                                        <a style="margin:0" class="text-info" asp-action="Mosavabat" asp-route-id="@item.id_onvan_komite">مصوبات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    `
+    @* <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.name)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-warning btn-rounded" asp-action="Edit" asp-route-id="@item.id_onvan_komite">ویرایش</a> |
+                            <a class="btn btn-outline-danger btn-rounded" asp-action="Delete" asp-route-id="@item.id_onvan_komite">حذف</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>*@
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(() => {
+            //$("#content").animate({ right: "0" });
+            $("#row").slideDown(3000);
+            $(window).scrollTop($("#back").offset().top);
+        });
+    </script>
+    <script>
+        function move_back() {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+            });
+            if (span.show() != true) {
+                $("#content").animate({ right: "-3000" });
+                $("#form").submit();
+            }
+        }
+    </script>
+}
+

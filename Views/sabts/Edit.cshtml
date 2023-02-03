@@ -1,0 +1,102 @@
+﻿@model komite.Models.v_sabt
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div id="content" style="position:relative;right:-3000px">
+    <h4>ویرایش اطلاعات</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="id_sabt" />
+                <div class="form-group">
+                    <label asp-for="onvan" class="control-label"></label>
+                    <textarea asp-for="onvan" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="onvan" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="date_jalase" class="control-label"></label>
+                    <input asp-for="date_jalase" class="form-control" />
+                    <span asp-validation-for="date_jalase" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="masul_anjam" class="control-label"></label>
+                    <input asp-for="masul_anjam" class="form-control" />
+                    <span asp-validation-for="masul_anjam" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="masul_peygiri" class="control-label"></label>
+                    <input asp-for="masul_peygiri" class="form-control" />
+                    <span asp-validation-for="masul_peygiri" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="date_shoru" class="control-label"></label>
+                    <input asp-for="date_shoru" class="form-control" />
+                    <span asp-validation-for="date_shoru" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="date_mohlat" class="control-label"></label>
+                    <input asp-for="date_mohlat" class="form-control" />
+                    <span asp-validation-for="date_mohlat" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="id_vaziat" class="control-label"></label>
+                    <select asp-for="id_vaziat" name="id_vaziat" id="id_vaziat" asp-items="ViewBag.id_vaziat" class="form-control" required></select>
+                    <span asp-validation-for="id_vaziat" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="tozihat" class="control-label"></label>
+                    <textarea asp-for="tozihat" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="tozihat" class="text-danger"></span>
+                </div>
+                <div hidden class="form-group">
+                    <label asp-for="darsad" class="control-label"></label>
+                    <input asp-for="darsad" class="form-control" />
+                    <span asp-validation-for="darsad" class="text-danger"></span>
+                </div>
+                <div hidden class="form-group">
+                    <label asp-for="id_onvan_komite" class="control-label"></label>
+                    <input asp-for="id_onvan_komite" class="form-control" />
+                    <span asp-validation-for="id_onvan_komite" class="text-danger"></span>
+                </div>
+                <div  class="form-group">
+                    <label asp-for="sal" class="control-label"></label>
+                    <input asp-for="sal" class="form-control" />
+                    <span asp-validation-for="sal" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-outline-success btn-rounded" type="submit" value="ویرایش" /> |
+                    <a class="btn btn-outline-primary btn-rounded" asp-action="Index">بازگشت به لیست</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(() => {
+            $("#content").animate({ right: "0" });
+            $(window).scrollTop($("#back").offset().top);
+        });
+    </script>
+    <script>
+        function move_back() {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+            });
+            if (span.show() != true) {
+                $("#content").animate({ right: "-3000" });
+                $("#form").submit();
+            }
+        }
+    </script>
+
+}
+

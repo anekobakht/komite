@@ -1,0 +1,110 @@
+﻿@model komite.Models.sabt
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div id="content" style="position:relative;right:-3000px">
+    <div>
+        <h4>آیا از حذف اطلاعات اطمینان دارید؟</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.onvan)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.onvan)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.date_jalase)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.date_jalase)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.masul_anjam)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.masul_anjam)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.masul_peygiri)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.masul_peygiri)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.date_shoru)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.date_shoru)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.date_mohlat)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.date_mohlat)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.id_vaziat)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.id_vaziat)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.tozihat)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.tozihat)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.darsad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.darsad)
+            </dd>
+            <dt hidden class="col-sm-2">
+                @Html.DisplayNameFor(model => model.id_onvan_komite)
+            </dt>
+            <dd hidden class="col-sm-10">
+                @Html.DisplayFor(model => model.id_onvan_komite)
+            </dd>
+            <dt hidden class="col-sm-2">
+                @Html.DisplayNameFor(model => model.sal)
+            </dt>
+            <dd  class="col-sm-10">
+                @Html.DisplayFor(model => model.sal)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="id_sabt" />
+            <input type="submit" value="حذف" class="btn btn-outline-danger btn-rounded" /> |
+            <a class="btn btn-outline-primary btn-rounded" asp-action="Index">بازگشت به لیست</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(() => {
+            $("#content").animate({ right: "0" });
+            $(window).scrollTop($("#back").offset().top);
+        });
+    </script>
+    <script>
+        function move_back() {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+            });
+            if (span.show() != true) {
+                $("#content").animate({ right: "-3000" });
+                $("#form").submit();
+            }
+        }
+    </script>
+
+}
+

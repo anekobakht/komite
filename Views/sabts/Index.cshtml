@@ -1,0 +1,143 @@
+﻿@model IEnumerable<komite.Models.v_sabt>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div id="content" style="position:relative;right:-3000px">
+
+    <h4>@ViewBag.name</h4>
+    <p>
+        <a id="btncreate" class="btn btn-outline-success btn-rounded" asp-action="Create">ثبت مصوبه جدید</a>
+        <a id="btncreate" class="btn btn-outline-info btn-rounded" asp-controller="onvan_komite" asp-action="Index">بازگشت</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.onvan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date_jalase)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.masul_anjam)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.masul_peygiri)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date_shoru)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date_mohlat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.id_vaziat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tozihat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.darsad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.sal)
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.name)
+                    </th>*@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.onvan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date_jalase)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.masul_anjam)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.masul_peygiri)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date_shoru)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date_mohlat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.onvan_vaziat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tozihat)
+                    </td>
+                    @if (item.darsad.ToString() == "100")
+                    {
+                        <td style="color:chartreuse">
+                            @Html.DisplayFor(modelItem => item.darsad)
+                        </td>
+                    }
+                    @if (item.darsad.ToString() == "50")
+                    {
+                        <td style="color:yellow">
+                            @Html.DisplayFor(modelItem => item.darsad)
+                        </td>
+                    }
+                    @if (item.darsad.ToString() == "0")
+                    {
+                        <td style="color:orangered">
+                            @Html.DisplayFor(modelItem => item.darsad)
+                        </td>
+                    }
+
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sal)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.id_sabt"><i class="fa fa-pencil-square-o text-warning fa-2x" aria-hidden="true"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.id_sabt"><i class="fa fa-times text-danger fa-2x" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+    @*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%JQuery*@
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+        <script>
+            $(document).ready(() => {
+                $("#content").animate({ right: "0" });
+                $(window).scrollTop($("#back").offset().top);
+            });
+        </script>
+        <script>
+            function move_back() {
+                $("#form").submit(function (e) {
+                    e.preventDefault();
+                });
+                if (span.show() != true) {
+                    $("#content").animate({ right: "-3000" });
+                    $("#form").submit();
+                }
+            }
+        </script>
+    }
+    @*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%JQuery*@
